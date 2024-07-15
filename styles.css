@@ -39,11 +39,11 @@ main {
     gap: 30px;
 }
 
-ul li {
+nav ul li {
     list-style: none;
 }
 
-ul li a {
+nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 18px;
@@ -159,8 +159,9 @@ ul li a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 14% 18%;
+    padding: 10% 18%;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .banner_input_align {
@@ -245,6 +246,94 @@ ul li a {
         width: 73vw;
         font-size: 18px;
 
+    }
+
+}
+
+/* banner completed */
+
+.popular_tour_section {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.popular_tour_contents,
+.popular_tour_image {
+    flex-basis: 50%;
+}
+
+.popular_tour_image {
+    text-align: end;
+}
+
+#popular_tour_image {
+    width: 450px;
+}
+
+.popular_tour_title {
+    color: rgb(19, 19, 24);
+
+
+    font-size: 40px;
+
+    font-weight: 800;
+}
+
+.popular_tour_description {
+    color: rgba(19, 19, 24, 0.7);
+
+
+    margin-top: 15px;
+    font-size: 16px;
+
+    font-weight: 400;
+}
+
+.reusable_btn {
+    border-radius: 8px;
+    background-color: rgb(255, 84, 0);
+    padding: 15px 20px;
+    width: 10rem;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    border: 2px solid rgb(255, 84, 0);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+}
+
+.list_items_margin {
+    margin: 25px;
+}
+
+@media only screen and (max-width:768px) {
+    .banner_section {
+        margin-bottom: 30px;
+    }
+
+    .popular_tour_section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #popular_tour_image {
+        width: 100%;
+    }
+
+    .popular_tour_title {
+        font-size: 23px;
+    }
+
+    .reusable_btn {
+        font-size: 20px;
+        width: 50%;
     }
 
 }
